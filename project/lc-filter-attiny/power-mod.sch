@@ -1,0 +1,132 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Power Modulation"
+Date "2022-01-20"
+Rev "1.0"
+Comp "ssube"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:D D1
+U 1 1 62A511AA
+P 5850 2400
+F 0 "D1" H 5850 2525 50  0000 C CNN
+F 1 "D" H 5850 2526 50  0001 C CNN
+F 2 "" H 5850 2400 50  0001 C CNN
+F 3 "~" H 5850 2400 50  0001 C CNN
+	1    5850 2400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:D D2
+U 1 1 62A514AD
+P 5850 3400
+F 0 "D2" H 5850 3525 50  0000 C CNN
+F 1 "D" H 5850 3526 50  0001 C CNN
+F 2 "" H 5850 3400 50  0001 C CNN
+F 3 "~" H 5850 3400 50  0001 C CNN
+	1    5850 3400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:PN2222A Q1
+U 1 1 62A51D6C
+P 6500 3400
+F 0 "Q1" H 6690 3446 50  0000 L CNN
+F 1 "PN2222A" H 6690 3355 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 6700 3325 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/PN2222-D.PDF" H 6500 3400 50  0001 L CNN
+	1    6500 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 62A5223F
+P 6150 3400
+F 0 "R1" V 6035 3400 50  0000 C CNN
+F 1 "R" V 6034 3400 50  0001 C CNN
+F 2 "" V 6080 3400 50  0001 C CNN
+F 3 "~" H 6150 3400 50  0001 C CNN
+	1    6150 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J1
+U 1 1 62A528F7
+P 4850 2350
+F 0 "J1" H 4850 2500 50  0000 C CNN
+F 1 "Conn_01x02" H 4768 2476 50  0001 C CNN
+F 2 "" H 4850 2350 50  0001 C CNN
+F 3 "~" H 4850 2350 50  0001 C CNN
+	1    4850 2350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J2
+U 1 1 62A52FF8
+P 4850 3350
+F 0 "J2" H 4850 3500 50  0000 C CNN
+F 1 "Conn_01x02" H 4768 3476 50  0001 C CNN
+F 2 "" H 4850 3350 50  0001 C CNN
+F 3 "~" H 4850 3350 50  0001 C CNN
+	1    4850 3350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J3
+U 1 1 62A534C6
+P 4850 4350
+F 0 "J3" H 4800 4500 50  0000 L CNN
+F 1 "Conn_01x02" H 4550 4500 50  0001 L CNN
+F 2 "" H 4850 4350 50  0001 C CNN
+F 3 "~" H 4850 4350 50  0001 C CNN
+	1    4850 4350
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 3350 5250 3350
+Wire Wire Line
+	5250 3350 5250 3400
+Wire Wire Line
+	5250 3450 5050 3450
+Wire Wire Line
+	5250 3400 5700 3400
+Connection ~ 5250 3400
+Wire Wire Line
+	5250 3400 5250 3450
+Wire Wire Line
+	5250 2350 5250 2400
+Wire Wire Line
+	5250 2450 5050 2450
+Wire Wire Line
+	5050 2350 5250 2350
+Wire Wire Line
+	5250 2400 5700 2400
+Connection ~ 5250 2400
+Wire Wire Line
+	5250 2400 5250 2450
+Wire Wire Line
+	6000 2400 6600 2400
+Wire Wire Line
+	6600 2400 6600 3200
+Wire Wire Line
+	6600 3600 6600 4400
+Wire Wire Line
+	6600 4400 5250 4400
+Wire Wire Line
+	5250 4400 5250 4350
+Wire Wire Line
+	5250 4350 5050 4350
+Wire Wire Line
+	5050 4450 5250 4450
+Wire Wire Line
+	5250 4450 5250 4400
+Connection ~ 5250 4400
+$EndSCHEMATC

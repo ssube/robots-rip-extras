@@ -1,0 +1,462 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Motor Tester"
+Date "2022-01-15"
+Rev "v1"
+Comp "ssube"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Transistor_BJT:PN2222A Q3
+U 1 1 62929142
+P 7650 4650
+F 0 "Q3" H 7840 4696 50  0000 L CNN
+F 1 "PN2222A" H 7840 4605 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 7850 4575 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/PN2222-D.PDF" H 7650 4650 50  0001 L CNN
+	1    7650 4650
+	0    1    1    0   
+$EndComp
+$Comp
+L Transistor_BJT:PN2222A Q2
+U 1 1 6292960D
+P 7050 4650
+F 0 "Q2" H 7240 4696 50  0000 L CNN
+F 1 "PN2222A" H 7240 4605 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 7250 4575 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/PN2222-D.PDF" H 7050 4650 50  0001 L CNN
+	1    7050 4650
+	0    1    1    0   
+$EndComp
+$Comp
+L Transistor_BJT:PN2222A Q1
+U 1 1 6292983B
+P 6450 4650
+F 0 "Q1" H 6640 4696 50  0000 L CNN
+F 1 "PN2222A" H 6640 4605 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 6650 4575 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/PN2222-D.PDF" H 6450 4650 50  0001 L CNN
+	1    6450 4650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 62929DE8
+P 6850 5300
+F 0 "D2" H 6843 5045 50  0000 C CNN
+F 1 "LED" H 6843 5136 50  0000 C CNN
+F 2 "" H 6850 5300 50  0001 C CNN
+F 3 "~" H 6850 5300 50  0001 C CNN
+	1    6850 5300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 6292A3C1
+P 6250 5300
+F 0 "D1" H 6243 5045 50  0000 C CNN
+F 1 "LED" H 6243 5136 50  0000 C CNN
+F 2 "" H 6250 5300 50  0001 C CNN
+F 3 "~" H 6250 5300 50  0001 C CNN
+	1    6250 5300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D3
+U 1 1 6292A6E8
+P 7450 5300
+F 0 "D3" H 7443 5045 50  0000 C CNN
+F 1 "LED" H 7443 5136 50  0000 C CNN
+F 2 "" H 7450 5300 50  0001 C CNN
+F 3 "~" H 7450 5300 50  0001 C CNN
+	1    7450 5300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 6292AA23
+P 4900 1550
+F 0 "C1" H 5015 1596 50  0000 L CNN
+F 1 "330nF" H 5015 1505 50  0000 L CNN
+F 2 "" H 4938 1400 50  0001 C CNN
+F 3 "~" H 4900 1550 50  0001 C CNN
+	1    4900 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 6292ADAC
+P 4050 3200
+F 0 "C3" H 4165 3246 50  0000 L CNN
+F 1 "100nF" H 4165 3155 50  0000 L CNN
+F 2 "" H 4088 3050 50  0001 C CNN
+F 3 "~" H 4050 3200 50  0001 C CNN
+	1    4050 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 6292B3BF
+P 6100 1550
+F 0 "C2" H 6215 1596 50  0000 L CNN
+F 1 "100nF" H 6215 1505 50  0000 L CNN
+F 2 "" H 6138 1400 50  0001 C CNN
+F 3 "~" H 6100 1550 50  0001 C CNN
+	1    6100 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 6292B84E
+P 4050 4750
+F 0 "R1" H 4120 4796 50  0000 L CNN
+F 1 "470" H 4120 4705 50  0000 L CNN
+F 2 "" V 3980 4750 50  0001 C CNN
+F 3 "~" H 4050 4750 50  0001 C CNN
+	1    4050 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 6292BE53
+P 5950 4750
+F 0 "R2" H 5880 4704 50  0000 R CNN
+F 1 "10k" H 5880 4795 50  0000 R CNN
+F 2 "" V 5880 4750 50  0001 C CNN
+F 3 "~" H 5950 4750 50  0001 C CNN
+	1    5950 4750
+	-1   0    0    1   
+$EndComp
+$Comp
+L MCU_Microchip_ATtiny:ATtiny402-SS U2
+U 1 1 6292C56C
+P 5000 3250
+F 0 "U2" H 4800 3950 50  0000 R CNN
+F 1 "ATtiny402-SS" H 4800 3850 50  0000 R CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5000 3250 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATtiny202-402-AVR-MCU-with-Core-Independent-Peripherals_and-picoPower-40001969A.pdf" H 5000 3250 50  0001 C CNN
+	1    5000 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x06 J3
+U 1 1 6292DC41
+P 6900 3150
+F 0 "J3" H 6980 3096 50  0000 L CNN
+F 1 "Conn_01x06" H 6980 3051 50  0001 L CNN
+F 2 "" H 6900 3150 50  0001 C CNN
+F 3 "~" H 6900 3150 50  0001 C CNN
+	1    6900 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x06 J4
+U 1 1 6292E84B
+P 7400 3150
+F 0 "J4" H 7550 3100 50  0000 C CNN
+F 1 "Conn_01x06" H 7318 3476 50  0001 C CNN
+F 2 "" H 7400 3150 50  0001 C CNN
+F 3 "~" H 7400 3150 50  0001 C CNN
+	1    7400 3150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:L7805 U1
+U 1 1 629305C5
+P 5500 1250
+F 0 "U1" H 5500 1492 50  0000 C CNN
+F 1 "L7805" H 5500 1401 50  0000 C CNN
+F 2 "" H 5525 1100 50  0001 L CIN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 5500 1200 50  0001 C CNN
+	1    5500 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J2
+U 1 1 62931459
+P 3750 2150
+F 0 "J2" H 3668 2467 50  0000 C CNN
+F 1 "PRGM" H 3668 2376 50  0000 C CNN
+F 2 "" H 3750 2150 50  0001 C CNN
+F 3 "~" H 3750 2150 50  0001 C CNN
+	1    3750 2150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT RV1
+U 1 1 629321CB
+P 5000 4750
+F 0 "RV1" H 4930 4796 50  0000 R CNN
+F 1 "5k" H 4930 4705 50  0000 R CNN
+F 2 "" H 5000 4750 50  0001 C CNN
+F 3 "~" H 5000 4750 50  0001 C CNN
+	1    5000 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J1
+U 1 1 6294416D
+P 3800 1250
+F 0 "J1" H 3718 1467 50  0000 C CNN
+F 1 "BATT" H 3718 1376 50  0000 C CNN
+F 2 "" H 3800 1250 50  0001 C CNN
+F 3 "~" H 3800 1250 50  0001 C CNN
+	1    3800 1250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J5
+U 1 1 62944CFB
+P 8400 3150
+F 0 "J5" H 8480 3142 50  0000 L CNN
+F 1 "MOTOR" H 8480 3051 50  0000 L CNN
+F 2 "" H 8400 3150 50  0001 C CNN
+F 3 "~" H 8400 3150 50  0001 C CNN
+	1    8400 3150
+	1    0    0    -1  
+$EndComp
+Text Label 7600 2950 0    50   ~ 0
+VIN
+Text Label 7600 3050 0    50   ~ 0
+GND
+Text Label 7600 3150 0    50   ~ 0
+OUT1
+Text Label 7600 3250 0    50   ~ 0
+OUT2
+Text Label 7600 3350 0    50   ~ 0
+VREF
+Text Label 7600 3450 0    50   ~ 0
+GND
+Text Label 6700 3450 2    50   ~ 0
+SLEEP
+Text Label 6700 3350 2    50   ~ 0
+FAULT
+Text Label 6700 3250 2    50   ~ 0
+IN2
+Text Label 6700 3150 2    50   ~ 0
+IN1
+Text Label 6700 3050 2    50   ~ 0
+GND
+Wire Wire Line
+	5200 1250 4900 1250
+Wire Wire Line
+	4900 1250 4900 1400
+Wire Wire Line
+	5800 1250 6100 1250
+Wire Wire Line
+	6100 1250 6100 1400
+Wire Wire Line
+	4900 1850 5500 1850
+Wire Wire Line
+	5500 1850 5500 1550
+Wire Wire Line
+	4900 1700 4900 1850
+Wire Wire Line
+	5500 1850 6100 1850
+Wire Wire Line
+	6100 1850 6100 1700
+Connection ~ 5500 1850
+Connection ~ 4900 1250
+Wire Wire Line
+	4000 1350 4550 1350
+Wire Wire Line
+	4550 1350 4550 1850
+Wire Wire Line
+	4550 1850 4900 1850
+Connection ~ 4900 1850
+Wire Wire Line
+	6100 1250 6300 1250
+Wire Wire Line
+	6300 1250 6300 2050
+Connection ~ 6100 1250
+Wire Wire Line
+	6100 3950 6100 3050
+Connection ~ 6100 3050
+Wire Wire Line
+	6100 3050 6100 1850
+Text Label 6700 2950 2    50   ~ 0
+VM
+Wire Wire Line
+	6100 3050 6700 3050
+Wire Wire Line
+	7600 3050 7850 3050
+Wire Wire Line
+	7850 3050 7850 3950
+Wire Wire Line
+	7850 3950 6100 3950
+Wire Wire Line
+	7600 3150 8200 3150
+Wire Wire Line
+	8200 3250 7600 3250
+Wire Wire Line
+	7600 2950 7850 2950
+Wire Wire Line
+	7850 2950 7850 2450
+Connection ~ 6300 2450
+Connection ~ 6100 1850
+Wire Wire Line
+	6300 2450 7850 2450
+Wire Wire Line
+	6700 3450 6300 3450
+Wire Wire Line
+	6300 3450 6300 2450
+Wire Wire Line
+	7650 4450 7650 4250
+Wire Wire Line
+	7650 4250 5850 4250
+Wire Wire Line
+	7050 4350 7050 4450
+Wire Wire Line
+	6850 4750 6850 5150
+Wire Wire Line
+	7450 4750 7450 5150
+Wire Wire Line
+	6250 5450 6250 5650
+Wire Wire Line
+	6250 5650 6850 5650
+Wire Wire Line
+	6850 5650 6850 5450
+Wire Wire Line
+	6850 5650 7450 5650
+Wire Wire Line
+	7450 5650 7450 5450
+Connection ~ 6850 5650
+Connection ~ 6250 5650
+Wire Wire Line
+	4050 4900 4050 5650
+Wire Wire Line
+	6250 4750 6250 5150
+Wire Wire Line
+	6700 3350 6450 3350
+Wire Wire Line
+	6450 3350 6450 4450
+Wire Wire Line
+	6650 4750 6650 4050
+Wire Wire Line
+	6650 4050 7250 4050
+Wire Wire Line
+	7250 4050 7250 4750
+Wire Wire Line
+	7250 4050 7850 4050
+Wire Wire Line
+	7850 4050 7850 4750
+Connection ~ 7250 4050
+Wire Wire Line
+	5000 2650 5000 2450
+Wire Wire Line
+	5000 2450 6300 2450
+Wire Wire Line
+	5600 2950 5700 2950
+Wire Wire Line
+	5700 2950 5700 2250
+Wire Wire Line
+	3950 2250 5700 2250
+Wire Wire Line
+	5000 2450 4050 2450
+Wire Wire Line
+	4050 2450 4050 3050
+Connection ~ 5000 2450
+Wire Wire Line
+	4050 3350 4050 3950
+Wire Wire Line
+	4050 3950 5000 3950
+Wire Wire Line
+	6300 3450 6300 4050
+Wire Wire Line
+	6300 4050 6650 4050
+Connection ~ 6300 3450
+Connection ~ 6650 4050
+Wire Wire Line
+	6700 3250 5950 3250
+Wire Wire Line
+	5950 3250 5950 3450
+Wire Wire Line
+	5950 3450 5600 3450
+Wire Wire Line
+	6700 3150 5950 3150
+Wire Wire Line
+	5950 3150 5950 3050
+Wire Wire Line
+	5950 3050 5600 3050
+Wire Wire Line
+	5600 3150 5850 3150
+Wire Wire Line
+	5850 3150 5850 4250
+Wire Wire Line
+	5600 3250 5750 3250
+Wire Wire Line
+	5750 3250 5750 4350
+Wire Wire Line
+	5750 4350 7050 4350
+Wire Wire Line
+	5600 3350 5650 3350
+Wire Wire Line
+	5650 3350 5650 3850
+Wire Wire Line
+	6300 4050 5650 4050
+Connection ~ 6300 4050
+Connection ~ 4050 3950
+Wire Wire Line
+	6100 3950 5000 3950
+Connection ~ 6100 3950
+Connection ~ 5000 3950
+Wire Wire Line
+	5000 3950 5000 3850
+Wire Wire Line
+	4050 3950 4050 4600
+Wire Wire Line
+	5000 4600 5000 3950
+Wire Wire Line
+	5000 4900 5000 5000
+Wire Wire Line
+	5000 5000 5650 5000
+Wire Wire Line
+	5150 4750 5350 4750
+Wire Wire Line
+	5350 4750 5350 3850
+Wire Wire Line
+	5350 3850 5650 3850
+Text Label 5600 3150 0    50   ~ 0
+GRN
+Text Label 5600 3250 0    50   ~ 0
+YEL
+Text Label 7650 4450 3    50   ~ 0
+GRN
+Text Label 7050 4450 3    50   ~ 0
+YEL
+Text Label 6450 4450 3    50   ~ 0
+RED
+Wire Wire Line
+	4050 5650 6250 5650
+Connection ~ 6450 4450
+Wire Wire Line
+	5650 4050 5650 5000
+Wire Wire Line
+	5650 5000 5950 5000
+Wire Wire Line
+	5950 5000 5950 4900
+Connection ~ 5650 5000
+Wire Wire Line
+	5950 4600 5950 4450
+Wire Wire Line
+	5950 4450 6450 4450
+Wire Wire Line
+	4000 1250 4900 1250
+Wire Wire Line
+	3950 2050 6300 2050
+Connection ~ 6300 2050
+Wire Wire Line
+	6300 2050 6300 2450
+Wire Wire Line
+	3950 2150 4550 2150
+Wire Wire Line
+	4550 2150 4550 1850
+Connection ~ 4550 1850
+$EndSCHEMATC

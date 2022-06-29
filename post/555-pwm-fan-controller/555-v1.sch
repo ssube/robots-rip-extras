@@ -1,0 +1,346 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "555 PWM Generator"
+Date "2021-01-20"
+Rev "1"
+Comp "ssube"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_01x04 J2
+U 1 1 628FD9EA
+P 7900 2750
+F 0 "J2" H 7980 2742 50  0000 L CNN
+F 1 "Conn_01x04" H 7980 2651 50  0000 L CNN
+F 2 "" H 7900 2750 50  0001 C CNN
+F 3 "~" H 7900 2750 50  0001 C CNN
+	1    7900 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Barrel_Jack J1
+U 1 1 628FF912
+P 7750 2100
+F 0 "J1" H 7520 2150 50  0000 R CNN
+F 1 "Barrel_Jack" H 7520 2059 50  0000 R CNN
+F 2 "" H 7800 2060 50  0001 C CNN
+F 3 "~" H 7800 2060 50  0001 C CNN
+	1    7750 2100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:L7805 U2
+U 1 1 62900EF2
+P 5900 3350
+F 0 "U2" H 5900 3592 50  0000 C CNN
+F 1 "L7805" H 5900 3501 50  0000 C CNN
+F 2 "" H 5925 3200 50  0001 L CIN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 5900 3300 50  0001 C CNN
+	1    5900 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 62901EA1
+P 6300 3800
+F 0 "C3" H 6415 3846 50  0000 L CNN
+F 1 "C" H 6415 3755 50  0000 L CNN
+F 2 "" H 6338 3650 50  0001 C CNN
+F 3 "~" H 6300 3800 50  0001 C CNN
+	1    6300 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 62902511
+P 5500 3800
+F 0 "C2" H 5615 3846 50  0000 L CNN
+F 1 "C" H 5615 3755 50  0000 L CNN
+F 2 "" H 5538 3650 50  0001 C CNN
+F 3 "~" H 5500 3800 50  0001 C CNN
+	1    5500 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 62902732
+P 3300 3750
+F 0 "C1" H 3415 3796 50  0000 L CNN
+F 1 "C" H 3415 3705 50  0000 L CNN
+F 2 "" H 3338 3600 50  0001 C CNN
+F 3 "~" H 3300 3750 50  0001 C CNN
+	1    3300 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Timer:TLC555xP U1
+U 1 1 62902D49
+P 3900 2750
+F 0 "U1" H 3900 2150 50  0000 C CNN
+F 1 "TLC555xP" H 3900 2050 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 4550 2350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tlc555.pdf" H 4750 2350 50  0001 C CNN
+	1    3900 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:PN2222A Q1
+U 1 1 629039A0
+P 7800 4500
+F 0 "Q1" H 7990 4546 50  0000 L CNN
+F 1 "PN2222A" H 7990 4455 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 8000 4425 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/PN2222-D.PDF" H 7800 4500 50  0001 L CNN
+	1    7800 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D3
+U 1 1 6290427A
+P 7900 4900
+F 0 "D3" V 7939 4782 50  0000 R CNN
+F 1 "LED" V 7848 4782 50  0000 R CNN
+F 2 "" H 7900 4900 50  0001 C CNN
+F 3 "~" H 7900 4900 50  0001 C CNN
+	1    7900 4900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 62904A15
+P 7900 5250
+F 0 "R1" H 7970 5296 50  0000 L CNN
+F 1 "R" H 7970 5205 50  0000 L CNN
+F 2 "" V 7830 5250 50  0001 C CNN
+F 3 "~" H 7900 5250 50  0001 C CNN
+	1    7900 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D2
+U 1 1 62905613
+P 6300 4750
+F 0 "D2" V 6346 4670 50  0000 R CNN
+F 1 "D" V 6255 4670 50  0000 R CNN
+F 2 "" H 6300 4750 50  0001 C CNN
+F 3 "~" H 6300 4750 50  0001 C CNN
+	1    6300 4750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D D1
+U 1 1 62905DD5
+P 5500 4750
+F 0 "D1" V 5454 4830 50  0000 L CNN
+F 1 "D" V 5545 4830 50  0000 L CNN
+F 2 "" H 5500 4750 50  0001 C CNN
+F 3 "~" H 5500 4750 50  0001 C CNN
+	1    5500 4750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_POT RV2
+U 1 1 6290641B
+P 5900 5250
+F 0 "RV2" V 5785 5250 50  0000 C CNN
+F 1 "R_POT" V 5694 5250 50  0000 C CNN
+F 2 "" H 5900 5250 50  0001 C CNN
+F 3 "~" H 5900 5250 50  0001 C CNN
+	1    5900 5250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C5
+U 1 1 6290691D
+P 4000 4800
+F 0 "C5" H 4115 4846 50  0000 L CNN
+F 1 "C" H 4115 4755 50  0000 L CNN
+F 2 "" H 4038 4650 50  0001 C CNN
+F 3 "~" H 4000 4800 50  0001 C CNN
+	1    4000 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 62906FD3
+P 3300 4800
+F 0 "C4" H 3415 4846 50  0000 L CNN
+F 1 "C" H 3415 4755 50  0000 L CNN
+F 2 "" H 3338 4650 50  0001 C CNN
+F 3 "~" H 3300 4800 50  0001 C CNN
+	1    3300 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT RV1
+U 1 1 62907487
+P 3650 5250
+F 0 "RV1" V 3535 5250 50  0000 C CNN
+F 1 "R_POT" V 3444 5250 50  0000 C CNN
+F 2 "" H 3650 5250 50  0001 C CNN
+F 3 "~" H 3650 5250 50  0001 C CNN
+	1    3650 5250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5500 3650 5500 3350
+Wire Wire Line
+	5500 3350 5600 3350
+Wire Wire Line
+	6200 3350 6300 3350
+Wire Wire Line
+	6300 3350 6300 3650
+Wire Wire Line
+	5500 5250 5750 5250
+Wire Wire Line
+	5500 4900 5500 5250
+Wire Wire Line
+	6050 5250 6300 5250
+Wire Wire Line
+	6300 5250 6300 4900
+Wire Wire Line
+	5500 4600 5500 4500
+Wire Wire Line
+	5500 4500 6300 4500
+Wire Wire Line
+	6300 4500 6300 4600
+Wire Wire Line
+	3300 4950 3300 5050
+Wire Wire Line
+	3300 5250 3500 5250
+Wire Wire Line
+	3650 5100 3650 5050
+Wire Wire Line
+	3650 5050 3300 5050
+Connection ~ 3300 5050
+Wire Wire Line
+	3300 5050 3300 5250
+Wire Wire Line
+	3800 5250 4000 5250
+Wire Wire Line
+	4000 5250 4000 4950
+Wire Wire Line
+	3400 2750 3300 2750
+Wire Wire Line
+	3300 2750 3300 3600
+Wire Wire Line
+	3400 2950 3150 2950
+Wire Wire Line
+	3150 2950 3150 2200
+Wire Wire Line
+	3150 2200 3900 2200
+Wire Wire Line
+	6300 2200 6300 3350
+Connection ~ 6300 3350
+Wire Wire Line
+	3900 2350 3900 2200
+Connection ~ 3900 2200
+Wire Wire Line
+	3900 2200 6300 2200
+Wire Wire Line
+	3400 2550 3300 2550
+Wire Wire Line
+	4750 2750 4400 2750
+Wire Wire Line
+	3900 3150 3900 3250
+Wire Wire Line
+	3900 3250 4750 3250
+Wire Wire Line
+	4750 3250 4750 2750
+Wire Wire Line
+	4400 2950 4950 2950
+Wire Wire Line
+	3300 2550 3300 2000
+Wire Wire Line
+	3300 2000 4950 2000
+Wire Wire Line
+	4950 2000 4950 2950
+Wire Wire Line
+	5500 4500 5150 4500
+Wire Wire Line
+	5150 4500 5150 2550
+Wire Wire Line
+	5150 2550 4400 2550
+Connection ~ 6300 4500
+Wire Wire Line
+	7900 4700 7900 4750
+Wire Wire Line
+	7900 5050 7900 5100
+Wire Wire Line
+	3300 4650 3300 4250
+Wire Wire Line
+	3300 4250 4000 4250
+Connection ~ 3300 4250
+Wire Wire Line
+	3300 4250 3300 3900
+Connection ~ 4000 4250
+Wire Wire Line
+	4000 4250 5500 4250
+Wire Wire Line
+	4000 4250 4000 4650
+Wire Wire Line
+	6300 3350 7900 3350
+Wire Wire Line
+	7900 3350 7900 4300
+Wire Wire Line
+	6300 4500 7000 4500
+Wire Wire Line
+	7900 5400 6800 5400
+Wire Wire Line
+	6800 5400 6800 4250
+Wire Wire Line
+	6800 4250 6300 4250
+Wire Wire Line
+	6800 4250 6800 2200
+Wire Wire Line
+	6800 2200 7200 2200
+Connection ~ 6800 4250
+Wire Wire Line
+	5500 3350 5500 2000
+Wire Wire Line
+	5500 2000 7000 2000
+Connection ~ 5500 3350
+Wire Wire Line
+	7700 2950 7000 2950
+Wire Wire Line
+	7000 2950 7000 4500
+Connection ~ 7000 4500
+Wire Wire Line
+	7000 4500 7600 4500
+Wire Wire Line
+	7700 2750 7000 2750
+Wire Wire Line
+	7000 2750 7000 2000
+Connection ~ 7000 2000
+Wire Wire Line
+	7000 2000 7450 2000
+Wire Wire Line
+	7700 2650 7200 2650
+Wire Wire Line
+	7200 2650 7200 2200
+Connection ~ 7200 2200
+Wire Wire Line
+	7200 2200 7450 2200
+Connection ~ 5900 4250
+Connection ~ 5500 4500
+NoConn ~ 7700 2850
+Wire Wire Line
+	5900 3650 5900 4250
+Wire Wire Line
+	5500 3950 5500 4250
+Connection ~ 5500 4250
+Wire Wire Line
+	5500 4250 5900 4250
+Wire Wire Line
+	6300 3950 6300 4250
+Connection ~ 6300 4250
+Wire Wire Line
+	6300 4250 5900 4250
+$EndSCHEMATC
