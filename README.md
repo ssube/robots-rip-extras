@@ -1,6 +1,7 @@
-# robots.rip
+# robots.rip extras
 
-This repository contains the extra resources from https://robots.rip/: models, schematics, and CSV BOMs.
+This repository contains the extra resources from https://robots.rip/: 3D models, CircuitJS simulators, Kicad
+schematics, and CSV BOMs.
 
 ## Posts
 
