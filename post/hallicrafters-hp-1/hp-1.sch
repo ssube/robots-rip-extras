@@ -1,0 +1,354 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Hallicrafters HP-1"
+Date "2022-07-03"
+Rev "1.0"
+Comp "ssube"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Conn_WallPlug_Earth P1
+U 1 1 62C39C06
+P 1750 2250
+F 0 "P1" H 1817 2484 50  0000 C CNN
+F 1 "Conn_WallPlug_Earth" H 1817 2484 50  0001 C CNN
+F 2 "" H 2150 2250 50  0001 C CNN
+F 3 "~" H 2150 2250 50  0001 C CNN
+	1    1750 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_SPST SW1
+U 1 1 62C3BB8C
+P 2500 1850
+F 0 "SW1" H 2500 1993 50  0000 C CNN
+F 1 "SW_SPST" H 2500 1994 50  0001 C CNN
+F 2 "" H 2500 1850 50  0001 C CNN
+F 3 "~" H 2500 1850 50  0001 C CNN
+	1    2500 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 62C3C374
+P 3550 2100
+F 0 "R1" H 3620 2146 50  0000 L CNN
+F 1 "R" H 3620 2055 50  0000 L CNN
+F 2 "" V 3480 2100 50  0001 C CNN
+F 3 "~" H 3550 2100 50  0001 C CNN
+	1    3550 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Lamp LA1
+U 1 1 62C3CDDF
+P 3550 2600
+F 0 "LA1" H 3678 2646 50  0000 L CNN
+F 1 "Lamp" H 3678 2555 50  0000 L CNN
+F 2 "" V 3550 2700 50  0001 C CNN
+F 3 "~" V 3550 2700 50  0001 C CNN
+	1    3550 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Fuse F1
+U 1 1 62C3D40B
+P 2500 2850
+F 0 "F1" V 2303 2850 50  0000 C CNN
+F 1 "3A" V 2394 2850 50  0000 C CNN
+F 2 "" V 2430 2850 50  0001 C CNN
+F 3 "~" H 2500 2850 50  0001 C CNN
+	1    2500 2850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2050 2150 2200 2150
+Wire Wire Line
+	2200 2150 2200 1850
+Wire Wire Line
+	2200 1850 2300 1850
+Wire Wire Line
+	3550 1850 3550 1950
+Wire Wire Line
+	3550 2250 3550 2400
+Wire Wire Line
+	3550 2800 3550 2850
+Wire Wire Line
+	2050 2350 2200 2350
+Wire Wire Line
+	2200 2350 2200 2850
+Wire Wire Line
+	2200 2850 2350 2850
+$Comp
+L Device:C C1
+U 1 1 62C40941
+P 3050 2350
+F 0 "C1" H 2800 2400 50  0000 L CNN
+F 1 "470pF" H 2700 2300 50  0000 L CNN
+F 2 "" H 3088 2200 50  0001 C CNN
+F 3 "~" H 3050 2350 50  0001 C CNN
+	1    3050 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 62C43F23
+P 3050 3100
+F 0 "C3" H 3165 3146 50  0000 L CNN
+F 1 "470pF" H 3165 3055 50  0000 L CNN
+F 2 "" H 3088 2950 50  0001 C CNN
+F 3 "~" H 3050 3100 50  0001 C CNN
+	1    3050 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 1850 3050 1850
+Wire Wire Line
+	3050 2200 3050 1850
+Connection ~ 3050 1850
+Wire Wire Line
+	3050 1850 3550 1850
+Wire Wire Line
+	3050 2500 3050 2850
+Wire Wire Line
+	2650 2850 3050 2850
+Wire Wire Line
+	3050 2850 3050 2950
+Connection ~ 3050 2850
+Wire Wire Line
+	2050 2550 2050 3350
+Wire Wire Line
+	2050 3350 3050 3350
+Wire Wire Line
+	3050 3350 3050 3250
+Wire Wire Line
+	3050 2850 3550 2850
+$Comp
+L Device:Transformer_1P_2S T1
+U 1 1 62C46410
+P 4500 2350
+F 0 "T1" H 4500 2931 50  0000 C CNN
+F 1 "Transformer_1P_2S" H 4500 2840 50  0000 C CNN
+F 2 "" H 4500 2350 50  0001 C CNN
+F 3 "~" H 4500 2350 50  0001 C CNN
+	1    4500 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 1850 4100 1850
+Wire Wire Line
+	4100 1850 4100 2150
+Connection ~ 3550 1850
+Wire Wire Line
+	4100 2550 4100 2850
+Wire Wire Line
+	4100 2850 3550 2850
+Connection ~ 3550 2850
+$Comp
+L Switch:SW_SPDT SW2
+U 1 1 62C48FF2
+P 5350 2450
+F 0 "SW2" V 5350 2262 50  0000 R CNN
+F 1 "SW_SPDT" V 5305 2262 50  0001 R CNN
+F 2 "" H 5350 2450 50  0001 C CNN
+F 3 "~" H 5350 2450 50  0001 C CNN
+	1    5350 2450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4900 2250 5050 2250
+Wire Wire Line
+	4900 2450 5050 2450
+Wire Wire Line
+	5050 2450 5050 2250
+Connection ~ 5050 2250
+Wire Wire Line
+	5050 2250 5250 2250
+Wire Wire Line
+	4900 1950 6550 1950
+Wire Wire Line
+	5350 2650 5350 3350
+Wire Wire Line
+	5450 2250 6250 2250
+$Comp
+L Device:Voltmeter_DC MES2
+U 1 1 62C5D09C
+P 9550 2700
+F 0 "MES2" H 9703 2746 50  0000 L CNN
+F 1 "0-16V" H 9703 2655 50  0000 L CNN
+F 2 "" V 9550 2800 50  0001 C CNN
+F 3 "~" V 9550 2800 50  0001 C CNN
+	1    9550 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C2
+U 1 1 62C5D59D
+P 8950 2700
+F 0 "C2" H 9068 2746 50  0000 L CNN
+F 1 "10000uF" H 9068 2655 50  0000 L CNN
+F 2 "" H 8988 2550 50  0001 C CNN
+F 3 "~" H 8950 2700 50  0001 C CNN
+	1    8950 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 62C5D8EC
+P 8450 2700
+F 0 "R2" H 8520 2746 50  0000 L CNN
+F 1 "470K" H 8520 2655 50  0000 L CNN
+F 2 "" V 8380 2700 50  0001 C CNN
+F 3 "~" H 8450 2700 50  0001 C CNN
+	1    8450 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L1
+U 1 1 62C5E168
+P 8050 2250
+F 0 "L1" V 8240 2250 50  0000 C CNN
+F 1 "L" V 8149 2250 50  0000 C CNN
+F 2 "" H 8050 2250 50  0001 C CNN
+F 3 "~" H 8050 2250 50  0001 C CNN
+	1    8050 2250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Bridge_+A-A D1
+U 1 1 62C666D5
+P 6550 2250
+F 0 "D1" H 6894 2250 50  0000 L CNN
+F 1 "D_Bridge_+A-A" H 6894 2205 50  0001 L CNN
+F 2 "" H 6550 2250 50  0001 C CNN
+F 3 "~" H 6550 2250 50  0001 C CNN
+	1    6550 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 2550 6550 2750
+Wire Wire Line
+	4900 2750 6550 2750
+$Comp
+L Device:Amperemeter_DC MES1
+U 1 1 62C6AC62
+P 7250 2250
+F 0 "MES1" V 7540 2250 50  0000 C CNN
+F 1 "0-10A" V 7449 2250 50  0000 C CNN
+F 2 "" V 7250 2350 50  0001 C CNN
+F 3 "~" V 7250 2350 50  0001 C CNN
+	1    7250 2250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6850 2250 7050 2250
+$Comp
+L Connector_Generic:Conn_01x01 J1
+U 1 1 62C70142
+P 7650 2600
+F 0 "J1" V 7522 2680 50  0000 L CNN
+F 1 "Conn_01x01" V 7613 2680 50  0000 L CNN
+F 2 "" H 7650 2600 50  0001 C CNN
+F 3 "~" H 7650 2600 50  0001 C CNN
+	1    7650 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J3
+U 1 1 62C70C7F
+P 7650 2900
+F 0 "J3" V 7614 2812 50  0000 R CNN
+F 1 "Conn_01x01" V 7523 2812 50  0000 R CNN
+F 2 "" H 7650 2900 50  0001 C CNN
+F 3 "~" H 7650 2900 50  0001 C CNN
+	1    7650 2900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J2
+U 1 1 62C77735
+P 10000 2600
+F 0 "J2" V 9872 2680 50  0000 L CNN
+F 1 "Conn_01x01" V 9963 2680 50  0000 L CNN
+F 2 "" H 10000 2600 50  0001 C CNN
+F 3 "~" H 10000 2600 50  0001 C CNN
+	1    10000 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J4
+U 1 1 62C77C45
+P 10000 2900
+F 0 "J4" V 9964 2812 50  0000 R CNN
+F 1 "Conn_01x01" V 9873 2812 50  0000 R CNN
+F 2 "" H 10000 2900 50  0001 C CNN
+F 3 "~" H 10000 2900 50  0001 C CNN
+	1    10000 2900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7450 2250 7650 2250
+Wire Wire Line
+	7650 2250 7650 2400
+Wire Wire Line
+	7650 2250 7900 2250
+Connection ~ 7650 2250
+Wire Wire Line
+	8200 2250 8450 2250
+Wire Wire Line
+	8450 2250 8450 2550
+Wire Wire Line
+	8450 2250 8950 2250
+Wire Wire Line
+	8950 2250 8950 2550
+Wire Wire Line
+	8950 2250 9550 2250
+Wire Wire Line
+	9550 2250 9550 2500
+Wire Wire Line
+	9550 2250 10000 2250
+Wire Wire Line
+	10000 2250 10000 2400
+Connection ~ 9550 2250
+Wire Wire Line
+	7650 3350 7650 3100
+Wire Wire Line
+	5350 3350 7650 3350
+Wire Wire Line
+	7650 3350 8450 3350
+Wire Wire Line
+	8450 3350 8450 2850
+Connection ~ 7650 3350
+Wire Wire Line
+	8450 3350 8950 3350
+Wire Wire Line
+	8950 3350 8950 2850
+Wire Wire Line
+	8950 3350 9550 3350
+Wire Wire Line
+	9550 3350 9550 2900
+Wire Wire Line
+	9550 3350 10000 3350
+Wire Wire Line
+	10000 3350 10000 3100
+Connection ~ 9550 3350
+Wire Notes Line
+	3900 1900 3900 2800
+Wire Notes Line
+	3250 2800 3250 1900
+Wire Notes Line
+	3250 1900 3900 1900
+Wire Notes Line
+	3250 2800 3900 2800
+Connection ~ 8450 2250
+Connection ~ 8950 2250
+Connection ~ 8450 3350
+Connection ~ 8950 3350
+$EndSCHEMATC
