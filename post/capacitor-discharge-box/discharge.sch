@@ -1,0 +1,167 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Capacitor Discharge"
+Date "2022-07-21"
+Rev "2.0"
+Comp "ssube"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R R3
+U 1 1 62C4975C
+P 5800 2950
+F 0 "R3" V 5700 2950 50  0000 C CNN
+F 1 "7.5K 1W" V 5900 2950 50  0000 C CNN
+F 2 "" V 5730 2950 50  0001 C CNN
+F 3 "~" H 5800 2950 50  0001 C CNN
+	1    5800 2950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 62C4A0A8
+P 5800 2450
+F 0 "R1" V 5700 2450 50  0000 C CNN
+F 1 "60k 8W" V 5900 2450 50  0000 C CNN
+F 2 "" V 5730 2450 50  0001 C CNN
+F 3 "~" H 5800 2450 50  0001 C CNN
+	1    5800 2450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5050 2600 5150 2600
+Wire Wire Line
+	5150 2600 5150 2450
+Wire Wire Line
+	5150 2450 5650 2450
+Wire Wire Line
+	5050 2800 5150 2800
+Wire Wire Line
+	5150 2800 5150 2950
+Wire Wire Line
+	5150 2950 5650 2950
+Wire Wire Line
+	5950 2450 6400 2450
+Wire Wire Line
+	6400 2450 6400 2700
+Wire Wire Line
+	6400 2950 5950 2950
+Connection ~ 6400 2700
+Wire Wire Line
+	6400 2700 6400 2950
+Wire Wire Line
+	4650 2700 4550 2700
+$Comp
+L Device:LED D1
+U 1 1 62C4BBB0
+P 6800 2250
+F 0 "D1" H 6793 2375 50  0000 C CNN
+F 1 "LED" H 6793 2376 50  0001 C CNN
+F 2 "" H 6800 2250 50  0001 C CNN
+F 3 "~" H 6800 2250 50  0001 C CNN
+	1    6800 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 62C4C539
+P 6800 3150
+F 0 "D2" H 6800 3300 50  0000 C CNN
+F 1 "LED" H 6793 2986 50  0001 C CNN
+F 2 "" H 6800 3150 50  0001 C CNN
+F 3 "~" H 6800 3150 50  0001 C CNN
+	1    6800 3150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 62C4CA38
+P 6800 2700
+F 0 "R2" V 6700 2700 50  0000 C CNN
+F 1 "1M 1W" V 6900 2700 50  0000 C CNN
+F 2 "" V 6730 2700 50  0001 C CNN
+F 3 "~" H 6800 2700 50  0001 C CNN
+	1    6800 2700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6400 2700 6550 2700
+Wire Wire Line
+	6550 2700 6550 2250
+Wire Wire Line
+	6550 2250 6650 2250
+Connection ~ 6550 2700
+Wire Wire Line
+	6550 2700 6650 2700
+Wire Wire Line
+	6550 2700 6550 3150
+Wire Wire Line
+	6550 3150 6650 3150
+Wire Wire Line
+	6950 3150 7050 3150
+Wire Wire Line
+	7050 3150 7050 2700
+Wire Wire Line
+	7050 2250 6950 2250
+Wire Wire Line
+	6950 2700 7050 2700
+Connection ~ 7050 2700
+Wire Wire Line
+	7050 2700 7050 2250
+$Comp
+L Connector:Conn_01x01_Female J2
+U 1 1 62C4FB51
+P 7400 2700
+F 0 "J2" H 7450 2700 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 7428 2635 50  0001 L CNN
+F 2 "" H 7400 2700 50  0001 C CNN
+F 3 "~" H 7400 2700 50  0001 C CNN
+	1    7400 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J1
+U 1 1 62C505C4
+P 4350 2700
+F 0 "J1" H 4450 2700 50  0000 C CNN
+F 1 "Conn_01x01_Female" H 4242 2566 50  0001 C CNN
+F 2 "" H 4350 2700 50  0001 C CNN
+F 3 "~" H 4350 2700 50  0001 C CNN
+	1    4350 2700
+	-1   0    0    1   
+$EndComp
+Wire Notes Line
+	4550 3450 4550 1950
+Text Notes 5150 3100 0    50   ~ 0
+75V
+Text Notes 5150 2400 0    50   ~ 0
+600V
+Text Notes 6350 2700 2    50   ~ 0
+≈10mA
+Wire Wire Line
+	7050 2700 7200 2700
+Wire Notes Line
+	7200 3450 7200 1950
+Wire Notes Line
+	7200 3450 4550 3450
+Wire Notes Line
+	4550 1950 7200 1950
+$Comp
+L Switch:SW_Push_SPDT SW1
+U 1 1 62C605C8
+P 4850 2700
+F 0 "SW1" H 4850 2893 50  0000 C CNN
+F 1 "SW_Push_SPDT" H 4850 2894 50  0001 C CNN
+F 2 "" H 4850 2700 50  0001 C CNN
+F 3 "~" H 4850 2700 50  0001 C CNN
+	1    4850 2700
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
